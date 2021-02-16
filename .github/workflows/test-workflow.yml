@@ -4,7 +4,7 @@ on:
     branches: [main]
 jobs:
   test-workflow:
-    #if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
+    if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
     runs-on: ubuntu-latest
     steps:
       - name: Show properties
